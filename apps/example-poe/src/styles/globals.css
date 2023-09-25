@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("@itell/ui/dist/style.css");
+
+.columns .column figure:first-child,
+.columns .column figure:first-child img {
+  margin-top: 0;
+}
+
+.columns .column p:first-child {
+  margin-top: 0;
+}
+
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.note .unhighlighted {
+  @apply text-foreground font-normal !important;
+}
+
+span.highlight {
+  cursor: pointer !important;
+  @apply text-background;
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .module-sidebar {
+    display: none;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+
+  .section-content {
+    grid-column: span 12;
+  }
+}

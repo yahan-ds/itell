@@ -1,0 +1,12 @@
+node_modules
+dist
+.next
+.contentlayer
+yarn.lock
+.DS_Store
+.vscode
+.env
+.env.local
+.env.production
+.turbo
+*.log
