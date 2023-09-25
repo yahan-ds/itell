@@ -25,6 +25,10 @@ import {
 } from "@/components/ui/tabs";
 import { TextOverImage } from "@/components/ui/text-over-image";
 
+import QuestionInputProps from "./question-input";
+import Scenario from "./scenario";
+import Table from "./table";
+
 export const MdxComponents = {
 	YoutubeVideo,
 	Image,
@@ -47,4 +51,8 @@ export const MdxComponents = {
 	Tab,
 	TabPanel,
 	TabsBody,
+    // math related
+    QuestionInputProps,
+    Scenario,
+    Table,
 };
