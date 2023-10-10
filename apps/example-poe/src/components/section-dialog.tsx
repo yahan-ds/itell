@@ -1,7 +1,7 @@
 import { Section } from "contentlayer/generated";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { MainMdx } from "./mdx";
-import { Button } from "./client-components";
+import { Mdx } from "./mdx";
+import { Button } from "./ui-components";
 import Link from "next/link";
 import { buttonVariants } from "@itell/ui/server";
 import { makeLocationHref } from "@/lib/utils";
@@ -27,7 +27,7 @@ export default function ({
 					</Link>
 				</div>
 
-				<MainMdx code={section.body.code} />
+				<Mdx code={section.body.code} />
 			</DialogContent>
 		</Dialog>
 	);
